@@ -60,11 +60,29 @@
 
 <div class="container">
 
-    <h1>Welkom bij onze NGO</h1>
+    <h1>Laatste Evenementen</h1>
 
-    <p>
-        Samen bouwen aan een sterkere gemeenschap en ondersteunen van mensen die het moeilijk hebben.
-    </p>
+    <table style="margin:auto; width:80%; border-collapse: collapse; background:white;">
+
+        <tr style="background-color:#AFC8E8;">
+            <th style="padding:15px;">Titel</th>
+            <th style="padding:15px;">Organisatie</th>
+            <th style="padding:15px;">Details</th>
+        </tr>
+
+        <tr th:each="event : ${events}">
+
+            <td style="padding:15px;" th:text="${event.titel}"></td>
+
+            <td style="padding:15px;" th:text="${event.organisatie}"></td>
+
+            <td style="padding:15px;">
+                Details
+            </td>
+
+        </tr>
+
+    </table>
 
 </div>
 
