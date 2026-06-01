@@ -30,6 +30,7 @@ public class EventService {
         List<Event> events = new ArrayList<>();
 
         events.add(new Event(
+                1L,
                 LocalDateTime.now(),
                 "Voedselinzameling",
                 "Inzameling van voedsel voor gezinnen.",
@@ -39,6 +40,7 @@ public class EventService {
         ));
 
         events.add(new Event(
+                2L,
                 LocalDateTime.now(),
                 "Buurtfeest",
                 "Gemeenschapsactiviteit voor buurtbewoners.",
@@ -48,5 +50,14 @@ public class EventService {
         ));
 
         return events;
+
+    }
+    public Event getEventById(Long id) {
+
+        return getEvents()
+                .stream()
+                .filter(event -> event.getId().equals(id))
+                .findFirst()
+                .orElse(null);
     }
 }

@@ -77,7 +77,9 @@
             <td style="padding:15px;" th:text="${event.organisatie}"></td>
 
             <td style="padding:15px;">
-                Details
+                <a th:href="@{/details/{id}(id=${event.id})}">
+                    Details
+                </a>
             </td>
 
         </tr>
