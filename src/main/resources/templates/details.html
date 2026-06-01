@@ -3,37 +3,133 @@
 <head>
     <meta charset="UTF-8">
     <title>Evenement Details</title>
+
+    <style>
+
+        body{
+            margin:0;
+            font-family:Arial, sans-serif;
+            background-color:#F8F4EF;
+        }
+
+        nav{
+            background-color:#AFC8E8;
+            padding:20px;
+        }
+
+        nav a{
+            text-decoration:none;
+            color:#3A3A3A;
+            margin-right:20px;
+            font-weight:bold;
+        }
+
+        .container{
+            max-width:900px;
+            margin:auto;
+            padding:40px;
+        }
+
+        .card{
+            background:white;
+            padding:30px;
+            border-radius:10px;
+            box-shadow:0 0 10px rgba(0,0,0,0.1);
+        }
+
+        h1{
+            color:#7EA1C4;
+        }
+
+        p{
+            margin:15px 0;
+            color:#444;
+        }
+
+        strong{
+            color:#6B5B4D;
+        }
+
+        .back-button{
+            display:inline-block;
+            margin-top:20px;
+            padding:10px 20px;
+            background-color:#AFC8E8;
+            color:#333;
+            text-decoration:none;
+            border-radius:5px;
+        }
+
+        footer{
+            background-color:#C8B6A6;
+            text-align:center;
+            padding:15px;
+            margin-top:50px;
+        }
+
+    </style>
+
 </head>
 <body>
 
-<h1 th:text="${event.titel}"></h1>
+<nav>
+    <a href="/">NGO</a>
+    <a href="/new">Nieuw Evenement</a>
+    <a href="/about">Over Ons</a>
+</nav>
 
-<p>
-    <strong>Organisatie:</strong>
-    <span th:text="${event.organisatie}"></span>
-</p>
+<div class="container">
 
-<p>
-    <strong>Omschrijving:</strong>
-    <span th:text="${event.omschrijving}"></span>
-</p>
+    <div class="card">
 
-<p>
-    <strong>E-mail:</strong>
-    <span th:text="${event.emailContactpersoon}"></span>
-</p>
+        <h1 th:text="${event.titel}"></h1>
 
-<p>
-    <strong>Locatie:</strong>
-    <span th:text="${event.locatie.naam}"></span>
-</p>
+        <p>
+            <strong>Organisatie:</strong>
+            <span th:text="${event.organisatie}"></span>
+        </p>
 
-<p>
-    <strong>Adres:</strong>
-    <span th:text="${event.locatie.adres}"></span>
-</p>
+        <p>
+            <strong>Omschrijving:</strong>
+            <span th:text="${event.omschrijving}"></span>
+        </p>
 
-<a href="/">Terug naar overzicht</a>
+        <p>
+            <strong>E-mailadres:</strong>
+            <span th:text="${event.emailContactpersoon}"></span>
+        </p>
+
+        <p>
+            <strong>Tijdstip:</strong>
+            <span th:text="${#temporals.format(event.tijdstip, 'dd/MM/yyyy HH:mm')}"></span>
+        </p>
+
+        <p>
+            <strong>Locatie:</strong>
+            <span th:text="${event.locatie.naam}"></span>
+        </p>
+
+        <p>
+            <strong>Adres:</strong>
+            <span th:text="${event.locatie.adres}"></span>
+        </p>
+
+        <p>
+            <strong>Capaciteit:</strong>
+            <span th:text="${event.locatie.capaciteit}"></span>
+        </p>
+
+        <a class="back-button" href="/">
+            Terug naar overzicht
+        </a>
+
+    </div>
+
+</div>
+
+<footer>
+    © 2026 NGO Anderlecht
+</footer>
 
 </body>
 </html>
