@@ -34,11 +34,42 @@
             color:#7EA1C4;
         }
 
-        .placeholder{
+        .form-card{
             background:white;
             padding:30px;
             border-radius:10px;
             box-shadow:0 0 10px rgba(0,0,0,0.1);
+        }
+
+        label{
+            display:block;
+            margin-top:15px;
+            margin-bottom:5px;
+            font-weight:bold;
+            color:#6B5B4D;
+        }
+
+        input, textarea{
+            width:100%;
+            padding:10px;
+            border:1px solid #ccc;
+            border-radius:5px;
+            box-sizing:border-box;
+        }
+
+        textarea{
+            resize:vertical;
+            min-height:120px;
+        }
+
+        button{
+            margin-top:20px;
+            background-color:#AFC8E8;
+            border:none;
+            padding:12px 20px;
+            border-radius:5px;
+            cursor:pointer;
+            font-weight:bold;
         }
 
         footer{
@@ -63,11 +94,39 @@
 
     <h1>Nieuw Evenement Toevoegen</h1>
 
-    <div class="placeholder">
+    <div class="form-card">
 
-        <p>
-            Het formulier voor evenementen wordt hier toegevoegd.
-        </p>
+        <form>
+
+            <label>Titel</label>
+            <input type="text">
+
+            <label>Omschrijving</label>
+            <textarea></textarea>
+
+            <label>Organisatie</label>
+            <input type="text">
+
+            <label>E-mailadres contactpersoon</label>
+            <input type="email">
+
+            <label>Tijdstip</label>
+            <input type="datetime-local">
+
+            <label>Naam locatie</label>
+            <input type="text">
+
+            <label>Adres locatie</label>
+            <input type="text">
+
+            <label>Capaciteit</label>
+            <input type="number">
+
+            <button type="submit">
+                Evenement Toevoegen
+            </button>
+
+        </form>
 
     </div>
 
