@@ -2,28 +2,27 @@
 
 ## Beschrijving
 
-Dit project is een prototype van een nieuwe website voor een Anderlechtse NGO die zich inzet voor gemeenschapsopbouw en hulp aan mensen die het minder breed hebben.
+Voor dit project heb ik een prototype gemaakt van een website voor een Anderlechtse NGO die zich inzet voor gemeenschapsopbouw en hulp aan mensen die het minder breed hebben.
 
-De applicatie werd ontwikkeld met Java en Spring Boot.
+De applicatie is ontwikkeld met Java en Spring Boot.
 
 ---
 
 ## Functionaliteiten
 
-* Overzicht van evenementen
-* Details van een evenement
-* Nieuw evenement toevoegen
-* Validatie van verplichte velden
-* Validatie van e-mailadres
+* Overzicht van de evenementen
+* Details bekijken van een evenement
+* Een nieuw evenement toevoegen
+* Controle van verplichte velden
+* Controle van een geldig e-mailadres
 * About pagina
 * Contact pagina
-* Professionele gebruikersinterface
 
 ---
 
 ## Gebruikte technologieën
 
-* Java 25
+* Java
 * Spring Boot
 * Thymeleaf
 * HTML
@@ -32,19 +31,16 @@ De applicatie werd ontwikkeld met Java en Spring Boot.
 
 ---
 
-## Externe libraries en frameworks
+## Gebruikte libraries en frameworks
 
-* Spring Boot Starter Web
-* Spring Boot Starter Thymeleaf
-* Spring Boot Starter Validation
+* Spring Boot
+* Thymeleaf
 
 ---
 
-## Gebruikte tutorials en documentatie
+## Gebruikte documentatie
 
-* Spring Boot Documentation
-* Thymeleaf Documentation
-* W3Schools HTML & CSS
+Tijdens het maken van dit project heb ik gebruik gemaakt van de officiële Spring Boot documentatie en W3Schools.
 
 ---
 
@@ -52,7 +48,7 @@ De applicatie werd ontwikkeld met Java en Spring Boot.
 
 AI werd gebruikt als hulpmiddel voor de structuur van het project.
 
-De afbeeldingen en illustraties voor de website werden met behulp van AI gegenereerd.
+De afbeeldingen op de website werden met behulp van AI gegenereerd.
 
 Chatgeschiedenis:
 https://chatgpt.com/share/6a26f4e2-3308-83ed-b2f3-ac0ef8c2ce5e
@@ -63,8 +59,10 @@ https://chatgpt.com/share/6a26f4e2-3308-83ed-b2f3-ac0ef8c2ce5e
 
 1. Open het project in IntelliJ IDEA.
 2. Start de klasse `Application.java`.
-3. Open een webbrowser.
+3. Open een browser.
 4. Ga naar `http://localhost:8080`.
-5. Gebruik de navigatie om de verschillende pagina's te bekijken.
+5. Gebruik het menu om door de website te navigeren.
+
+
 
 
