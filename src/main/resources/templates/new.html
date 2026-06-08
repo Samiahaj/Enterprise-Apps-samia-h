@@ -7,9 +7,17 @@
     <style>
 
         body{
+
             margin:0;
+
             font-family:Arial,sans-serif;
-            background:#F7F3FC;
+
+            background:linear-gradient(
+                    180deg,
+                    #F8F3FF,
+                    #F3ECFC
+            );
+
         }
 
         .navbar{
@@ -94,39 +102,67 @@
         }
 
         .container{
-            max-width:900px;
-            margin:auto;
-            padding:40px;
+
+            width:85%;
+
+            margin:50px auto;
+
+            background:white;
+
+            padding:50px;
+
+            border-radius:30px;
+
+            box-shadow:0px 15px 35px rgba(0,0,0,0.08);
+
         }
 
         h1{
-            color:#7EA1C4;
-        }
 
+            color:#432874;
+
+            font-size:45px;
+
+            text-align:center;
+
+        }
         .form-card{
+
             background:white;
-            padding:30px;
-            border-radius:10px;
-            box-shadow:0 0 10px rgba(0,0,0,0.1);
+
+            padding:40px;
+
             border-radius:25px;
 
-            box-shadow:0px 15px 35px rgba(0,0,0,0.1);
+            box-shadow:0px 15px 35px rgba(0,0,0,0.08);
+
         }
 
         label{
             display:block;
             margin-top:15px;
             margin-bottom:5px;
-            font-weight:bold;
-            color:#6B5B4D;
+            color:#432874;
+
+            font-size:18px;
         }
 
         input, textarea{
             width:100%;
-            padding:10px;
-            border:1px solid #ccc;
-            border-radius:5px;
+            border:2px solid #E3D5F7;
+
+            border-radius:15px;
+
+            padding:15px;
             box-sizing:border-box;
+        }
+        input:focus,
+        textarea:focus{
+
+            outline:none;
+
+            border-color:#8A2BE2;
+
         }
 
         textarea{
@@ -155,12 +191,84 @@
             font-size:18px;
 
         }
+        .footer{
 
-        footer{
-            background-color:#C8B6A6;
+            margin-top:80px;
+
+            background:#2B124C;
+
+            color:white;
+
+            display:flex;
+
+            justify-content:space-between;
+
+            align-items:center;
+
+            padding:30px 80px;
+
+        }
+
+        .footer-left{
+
+            display:flex;
+
+            align-items:center;
+
+            gap:20px;
+
+        }
+
+        .footer-left img{
+
+            width:50px;
+
+        }
+
+        .footer-left h2{
+
+            margin:0;
+
+        }
+
+        .footer-left p{
+
+            margin:0;
+
+            color:#D8C9F0;
+
+        }
+
+        .footer-center a{
+
+            display:block;
+
+            color:white;
+
+            text-decoration:none;
+
+            margin-top:8px;
+
+        }
+
+        .footer-right p{
+
+            margin:5px;
+
+            color:#D8C9F0;
+
+        }
+
+        .copyright{
+
+            background:#1D0C36;
+
+            color:white;
+
             text-align:center;
-            padding:15px;
-            margin-top:50px;
+
+            padding:12px;
+
         }
 
     </style>
@@ -264,9 +372,50 @@
 
 </div>
 
-<footer>
-    © 2026 NGO Anderlecht
+<footer class="footer">
+
+    <div class="footer-left">
+
+        <img src="/images/logo.png">
+
+        <div>
+
+            <h2>NGO ANDERLECHT</h2>
+
+            <p>
+                Samen maken we het verschil
+            </p>
+
+        </div>
+
+    </div>
+
+    <div class="footer-center">
+
+        <a href="/">Home</a>
+
+        <a href="/about">Over ons</a>
+
+        <a href="/contact">Contact</a>
+
+    </div>
+
+    <div class="footer-right">
+
+        <p>Campus Kaai</p>
+
+        <p>1070 Anderlecht</p>
+
+        <p>info@ngo.be</p>
+
+    </div>
+
 </footer>
 
+<div class="copyright">
+
+    © 2026 NGO Anderlecht
+
+</div>
 </body>
 </html>
