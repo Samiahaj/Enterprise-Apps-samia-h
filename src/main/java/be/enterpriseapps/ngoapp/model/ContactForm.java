@@ -1,5 +1,6 @@
 package be.enterpriseapps.ngoapp.model;
 
+
 public class ContactForm {
     private String naam;
     private String email;
