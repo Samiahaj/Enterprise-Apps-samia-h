@@ -1,4 +1,4 @@
-# Enterprise Apps Samia Haj
+# Enterprise Apps 
 
 ## Beschrijving
 
@@ -6,36 +6,30 @@ Voor dit project heb ik een prototype gemaakt van een website voor een Anderlech
 
 De applicatie is ontwikkeld met Java en Spring Boot.
 
----
-
 ## Functionaliteiten
 
-* Overzicht van de evenementen
-* Details bekijken van een evenement
-* Een nieuw evenement toevoegen
-* Controle van verplichte velden
-* Controle van een geldig e-mailadres
-* About pagina
-* Contact pagina
-
----
+- Overzicht van de laatste evenementen
+- Details bekijken van een evenement
+- Een nieuw evenement toevoegen
+- Controle van verplichte velden
+- Controle van een geldig e-mailadres
+- Contactformulier met Mailtrap
+- About pagina
+- Contact pagina
 
 ## Gebruikte technologieën
 
-* Java
-* Spring Boot
-* Thymeleaf
-* HTML
-* CSS
-* GitHub
-
----
+- Java
+- Spring Boot
+- Thymeleaf
+- HTML
+- CSS
+- GitHub
 
 ## Gebruikte documentatie
 
-Tijdens het maken van dit project heb ik gebruik gemaakt van de officiële Spring Boot documentatie en W3Schools.
+Tijdens het maken van dit project heb ik gebruik gemaakt van de officiële Spring Boot documentatie, de Thymeleaf documentatie en W3Schools.
 
----
 ## Mogelijke uitbreidingen
 
 Als ik meer tijd had, zou ik graag nog enkele extra functionaliteiten toevoegen:
@@ -45,9 +39,7 @@ Als ik meer tijd had, zou ik graag nog enkele extra functionaliteiten toevoegen:
 - Evenementen bewerken en verwijderen.
 - De gegevens opslaan in een echte databank in plaats van een lijst.
 - Een zoekfunctie of filters toevoegen voor evenementen.
-- Een betere bevestigingspagina na het versturen van een contactbericht.
 
----
 ## Gebruik van AI
 
 AI werd gebruikt als hulpmiddel voor de structuur van het project.
@@ -56,8 +48,6 @@ De afbeeldingen op de website werden met behulp van AI gegenereerd.
 
 Chatgeschiedenis:
 https://chatgpt.com/share/6a26f4e2-3308-83ed-b2f3-ac0ef8c2ce5e
-
----
 
 ## Handleiding
 
