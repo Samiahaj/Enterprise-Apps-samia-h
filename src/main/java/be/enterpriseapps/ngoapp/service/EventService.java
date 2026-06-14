@@ -51,6 +51,87 @@ public class EventService {
                 locatie2,
                 "event2.jpg"
         ));
+        events.add(new Event(
+                3L,
+                LocalDateTime.now().plusDays(2),
+                "Kledinginzameling",
+                "Inzameling van kleding voor gezinnen.",
+                "NGO Anderlecht",
+                "info@ngo.be",
+                locatie1,
+                "event1.jpg"
+        ));
+        events.add(new Event(
+                4L,
+                LocalDateTime.now().plusDays(4),
+                "Sportdag",
+                "Sportactiviteiten voor jongeren.",
+                "Partnerorganisatie",
+                "sport@partner.be",
+                locatie2,
+                "event2.jpg"
+        ));
+        events.add(new Event(
+                5L,
+                LocalDateTime.now().plusDays(6),
+                "Vrijwilligersdag",
+                "Ontmoeting voor nieuwe vrijwilligers.",
+                "NGO Anderlecht",
+                "vrijwilligers@ngo.be",
+                locatie1,
+                "event1.jpg"
+        ));
+        events.add(new Event(
+                6L,
+                LocalDateTime.now().plusDays(8),
+                "Gezinsfeest",
+                "Activiteiten voor gezinnen uit de buurt.",
+                "Buurtcentrum",
+                "contact@buurt.be",
+                locatie2,
+                "event2.jpg"
+        ));
+        events.add(new Event(
+                7L,
+                LocalDateTime.now().plusDays(10),
+                "Workshop Digitale Vaardigheden",
+                "Leer omgaan met computers en internet.",
+                "NGO Anderlecht",
+                "digitaal@ngo.be",
+                locatie1,
+                "event1.jpg"
+        ));
+        events.add(new Event(
+                8L,
+                LocalDateTime.now().plusDays(12),
+                "Buurtmaaltijd",
+                "Samen genieten van een gezellige maaltijd.",
+                "Partnerorganisatie",
+                "eten@partner.be",
+                locatie2,
+                "event2.jpg"
+        ));
+        events.add(new Event(
+                9L,
+                LocalDateTime.now().plusDays(14),
+                "Kinderactiviteiten",
+                "Spelletjes en workshops voor kinderen.",
+                "NGO Anderlecht",
+                "kinderen@ngo.be",
+                locatie1,
+                "event1.jpg"
+        ));
+        events.add(new Event(
+                10L,
+                LocalDateTime.now().plusDays(16),
+                "Cultuurfestival",
+                "Ontdek verschillende culturen uit Anderlecht.",
+                "Cultuurhuis",
+                "info@cultuur.be",
+                locatie2,
+                "event2.jpg"
+        ));
+
     }
 
     public List<Event> getEvents() {
